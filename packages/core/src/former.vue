@@ -43,13 +43,13 @@ const formData = reactive({});
         v-bind="item.props"
       >
         <!-- slots -->
-        <template v-for="slot in item.slots" :key="slot.name" #[slot.name]>
+        <!-- <template v-for="slot in item.slots" :key="slot.name" #[slot.name]>
           <FormerItem
             v-if="slot.children"
             :key="slot.name"
             :schema="slot.children"
           />
-        </template>
+        </template> -->
         <!-- children -->
         <FormerItem v-if="item.children" :schema="item.children" />
       </component>

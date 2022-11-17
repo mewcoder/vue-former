@@ -1,10 +1,12 @@
 <script setup>
-defineProps({
+const props = defineProps({
   schema: {
     type: Array,
     default: () => []
   }
 });
+
+console.log(props.schema);
 </script>
 
 <template>
@@ -14,9 +16,9 @@ defineProps({
         v-if="typeof child === 'object'"
         :is="child.type"
         :key="index"
-        v-bind="[child.props]"
+        v-bind="child.props"
       >
-        <VFormerItem v-if="child.children" :schema="child.children" />
+        <FormerItem v-if="child.children" :schema="child.children" />
       </component>
       <template v-else>
         {{ child }}
@@ -27,6 +29,6 @@ defineProps({
 
 <script>
 export default {
-  name: 'VFormerItem'
+  name: 'FormerItem'
 };
 </script>
