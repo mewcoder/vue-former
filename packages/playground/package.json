@@ -1,0 +1,7 @@
+{
+  "name": "former-playground",
+  "version": "0.0.1",
+  "dependencies": {
+    "vue-router": "^4.1.5"
+  }
+}
