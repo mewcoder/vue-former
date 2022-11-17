@@ -3,7 +3,21 @@
     "model": "inputValue",
     "type": "el-input",
     "label": "输入框",
-    "value": ""
+    "value": "",
+    "slots": [
+      {
+        "name": "prepend",
+        "children": [
+          "https://"
+        ]
+      },
+      {
+        "name": "append",
+        "children": [
+          ".com"
+        ]
+      }
+    ]
   },
   {
     "model": "selectValue",

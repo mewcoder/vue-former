@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue';
   <header>
     <img src="@/assets/logo.svg" width="60" height="60" />
     <div class="wrapper">
-      <HelloWorld msg="VTV Starter" />
+      <HelloWorld msg="vue former" />
     </div>
   </header>
   <RouterView />
