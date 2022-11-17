@@ -9,6 +9,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "element-plus": "^2.2.21",
+    "former-core": "workspace:*",
     "vue": "^3.2.41"
   },
   "devDependencies": {

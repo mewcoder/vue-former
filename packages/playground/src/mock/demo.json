@@ -1,0 +1,30 @@
+[
+  {
+    "model": "inputValue",
+    "type": "el-input",
+    "label": "输入框",
+    "value": ""
+  },
+  {
+    "model": "selectValue",
+    "type": "el-select",
+    "label": "下拉单选框",
+    "value": "1",
+    "children": [
+      {
+        "type": "el-option",
+        "props": {
+          "value": "1",
+          "label": "选项1"
+        }
+      },
+      {
+        "type": "el-option",
+        "props": {
+          "value": "2",
+          "label": "选项2"
+        }
+      }
+    ]
+  }
+]
