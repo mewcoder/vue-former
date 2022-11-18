@@ -3,19 +3,15 @@
     "model": "inputValue",
     "type": "el-input",
     "label": "输入框",
-    "value": "",
+    "value": "1111",
     "slots": [
       {
         "name": "prepend",
-        "children": [
-          "https://"
-        ]
+        "children": ["https://"]
       },
       {
         "name": "append",
-        "children": [
-          ".com"
-        ]
+        "children": [".com"]
       }
     ]
   },
