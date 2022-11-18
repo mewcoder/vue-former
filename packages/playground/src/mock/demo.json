@@ -13,7 +13,10 @@
         "name": "append",
         "children": [".com"]
       }
-    ]
+    ],
+    "props": {
+      "clearable": true
+    }
   },
   {
     "model": "selectValue",
@@ -35,6 +38,9 @@
           "label": "选项2"
         }
       }
-    ]
+    ],
+    "props": {
+      "clearable": true
+    }
   }
 ]

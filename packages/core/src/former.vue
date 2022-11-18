@@ -32,12 +32,16 @@ const renderList = computed(() => {
 });
 
 const formData = reactive({});
+
+const formRule = reactive({});
+
 watch(
   () => props.schema,
   (val) => {
     if (!val || !val.length) return;
     const list = cloneDeep(val);
     initFormData(list);
+    initFormRules(list);
   },
   { deep: true, immediate: true }
 );
@@ -52,6 +56,12 @@ function initFormData(list) {
 function initItemValue(item) {
   const { model, value } = item;
   formData[model] = value;
+}
+
+function initFormRules() {
+  for (const key in props.rules) {
+    formRule[key] = props.rules[key];
+  }
 }
 
 //-----------------------------API-----------------------------
@@ -74,6 +84,7 @@ defineExpose({ getForm, resetFields });
     ref="formRef"
     :is="formKey"
     :model="formData"
+    :rules="formRule"
     v-bind="config"
     @submit.prevent
   >
